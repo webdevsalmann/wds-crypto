@@ -17,7 +17,7 @@ export default function CTA() {
                 <div className="p-base bg-secondary hover:bg-secondary/70 flex gap-base group">
                     <div>
                         <div className="text-lg">Plans & Pricing.</div>
-                        <Link className="text-primary hover:underline " href="/">
+                        <Link className="text-primary hover:underline " href="/pricing">
                             Learn More
                         </Link>
                     </div>
