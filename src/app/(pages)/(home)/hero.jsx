@@ -92,7 +92,7 @@ export function PriceAlert() {
                 <div className="mt-base grid place-items-end space-y-2">
                     {formFields.map(({ name, data, label, isNumeric }) => (
                         <div key={name} className="align-row">
-                            <div className="justify-self-end">{label}</div>
+                            <div className="justify-self-end text-right">{label}</div>
                             {isNumeric ? (
                                 <div className="flex items-center gap-2 w-fit justify-self-end sm:justify-self-start">
                                     <NumericInput
@@ -169,7 +169,7 @@ export function PercentageAlert() {
                 <div className="mt-base grid place-items-end space-y-2">
                     {formFields.map(({ name, data, label, isNumeric }) => (
                         <div key={name} className="align-row">
-                            <div className="justify-self-end">{label}</div>
+                            <div className="justify-self-end text-right">{label}</div>
                             {isNumeric ? (
                                 <div className="flex items-center gap-2 w-fit justify-self-end sm:justify-self-start">
                                     <NumericInput
@@ -191,7 +191,10 @@ export function PercentageAlert() {
                     ))}
 
                     <div className="pt-base w-full flex-center">
-                        <Button onClick={handleClick}>Set Alert</Button>
+                        <Button className="group" variant="tertiary" onClick={handleClick}>
+                            <BellRing className="group-hover:mr-2 w-0 group-hover:w-base shrink-0 transition-all" />
+                            Set Alert
+                        </Button>
                     </div>
                 </div>
             </div>
@@ -246,7 +249,7 @@ export function PeriodicAlert() {
                 <div className="mt-base grid place-items-end space-y-2">
                     {formFields.map(({ name, data, label, isNumeric }) => (
                         <div key={name} className="align-row">
-                            <div className="justify-self-end">{label}</div>
+                            <div className="justify-self-end text-right">{label}</div>
                             {isNumeric ? (
                                 <div className="flex items-center gap-2 w-fit justify-self-end sm:justify-self-start">
                                     <NumericInput
@@ -273,7 +276,10 @@ export function PeriodicAlert() {
                     ))}
 
                     <div className="pt-base w-full flex-center">
-                        <Button onClick={handleClick}>Set Alert</Button>
+                        <Button className="group" variant="tertiary" onClick={handleClick}>
+                            <BellRing className="group-hover:mr-2 w-0 group-hover:w-base shrink-0 transition-all" />
+                            Set Alert
+                        </Button>
                     </div>
                 </div>
             </div>
@@ -322,7 +328,7 @@ export function VolumeAlert() {
                 <div className="mt-base grid place-items-end space-y-2">
                     {formFields.map(({ name, data, label }) => (
                         <div key={name} className="align-row">
-                            <div className="justify-self-end">{label}</div>
+                            <div className="justify-self-end text-right">{label}</div>
                             <CustomSelect
                                 name={name}
                                 data={data}
@@ -332,7 +338,10 @@ export function VolumeAlert() {
                     ))}
 
                     <div className="pt-base w-full flex-center">
-                        <Button onClick={handleClick}>Set Alert</Button>
+                        <Button className="group" variant="tertiary" onClick={handleClick}>
+                            <BellRing className="group-hover:mr-2 w-0 group-hover:w-base shrink-0 transition-all" />
+                            Set Alert
+                        </Button>
                     </div>
                 </div>
             </div>

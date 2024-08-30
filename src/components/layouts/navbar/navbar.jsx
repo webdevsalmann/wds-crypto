@@ -43,17 +43,21 @@ export default function Navbar() {
                     </Button>
                 </div>
                 {navbarOpen && (
-                    <div className="py-base space-y-base border-b">
+                    <div className="py-base border-b">
+
                         <div className="grid grid-cols-2 place-items-center gap-sm">
                             <Button variant="outline">Login</Button>
                             <Button>signup</Button>
                         </div>
 
-                        {/* <div className="flex flex-col gap-sm w-fit">
-                            <Button variant="ghost">Market</Button>
-                            <Button variant="ghost">Listings</Button>
-                            <Button variant="ghost">onchain</Button>
-                        </div> */}
+                        <div className="mt-xl flex-center">
+                            <div className="flex flex-col gap-sm w-fit">
+                                <Button variant="secondary">Market</Button>
+                                <Button variant="secondary">Listings</Button>
+                                <Button variant="secondary">On Chain</Button>
+                                <Button variant="secondary">About</Button>
+                            </div>
+                        </div>
                     </div>
                 )}
             </nav>
